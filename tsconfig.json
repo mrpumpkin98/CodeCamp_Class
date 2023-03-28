@@ -25,7 +25,7 @@
         "**/*.tsx",
         "pages/index.js",
         "pages/_app.js"
-    ],
+, "pages/section13/13-04-prev-state/index.js"    ],
     "exclude": [
         "node_modules"
     ]

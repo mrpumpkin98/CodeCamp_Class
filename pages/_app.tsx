@@ -1,4 +1,4 @@
-import "../../../../../../../styles/globals.css";
+import "../styles/globals.css";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 import type { AppProps } from "next/app";
 
