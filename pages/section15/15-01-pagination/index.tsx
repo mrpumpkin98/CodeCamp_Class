@@ -35,22 +35,6 @@ export default function StaticRoutingPage(): JSX.Element {
           {index + 1}
         </span>
       ))}
-
-      {/* {[1, 2, 3, 4, 5, 6].map((el, index) => (
-        <span key={el} id={String(el)} onClick={onClickPage}>
-          {el}
-        </span>
-      ))} */}
-
-      {/* <span id="1" onClick={onClickPage}>
-        1
-      </span>
-      <span id="2" onClick={onClickPage}>
-        2
-      </span>
-      <span id="3" onClick={onClickPage}>
-        3
-      </span> */}
     </div>
   );
 }
