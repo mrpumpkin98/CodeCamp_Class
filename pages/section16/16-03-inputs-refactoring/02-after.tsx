@@ -30,6 +30,7 @@ export default function GraphqlMutationPage() {
     });
     console.log(result);
   };
+
   function onChangeInputs(event) {
     setInputs({
       ...inputs,

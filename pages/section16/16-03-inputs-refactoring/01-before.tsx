@@ -29,6 +29,7 @@ export default function GraphqlMutationPage() {
     });
     console.log(result);
   };
+
   function onChangeWriter(event) {
     setWriter(event.target.value);
   }
