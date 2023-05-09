@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Document</title>
+    <script>
+      const onClickPromise = async () => {
+        console.time("========개별 promise 각각==========");
+        const result1 = await new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve("다운로드URL");
+          }, 2000);
+        });
+        const result2 = await new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve("다운로드URL");
+          }, 3000);
+        });
+        const result3 = await new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve("다운로드URL");
+          }, 1000);
+        });
+        console.timeEnd("========개별 promise 각각==========");
+      };
+
+      const onClickPromiseAll = async () => {
+        console.time("======== 한방 promise.all =============");
+        //    await Promise.all([promise, promise, promise, ...])
+        const results = await Promise.all([
+          new Promise((resolve, reject) => {
+            setTimeout(() => {
+              resolve("다운로드URL");
+            }, 2000);
+          }),
+          new Promise((resolve, reject) => {
+            setTimeout(() => {
+              resolve("다운로드URL");
+            }, 3000);
+          }),
+          new Promise((resolve, reject) => {
+            setTimeout(() => {
+              resolve("다운로드URL");
+            }, 1000);
+          }),
+        ]);
+        console.log(results);
+        console.timeEnd("======== 한방 promise.all =============");
+      };
+    </script>
+  </head>
+  <body>
+    <button onclick="onClickPromise()">Promise 엽습하기!!</button>
+    <button onclick="onClickPromiseAll()">Promise.all 연습하기!!</button>
+  </body>
+</html>

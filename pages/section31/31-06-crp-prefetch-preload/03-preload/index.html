@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>프리로드(농심너구리)</title>
+
+    <!-- 1. 프리로드란? 나중에 다운로드 받는 파일을 먼저 다운로드 받도록 순서 제어하기 -->
+
+    <!-- 2. 만약, 여기서 프리페치를 한다면? 프리페치는 다음을 위해서 미리 받는 것이므로 자동으로 마지막에 받음(img로 1번 받고, prefetch로 1번 총 2번 받음) -->
+
+    <link
+      rel="preload"
+      as="image"
+      href="./DB380CA1-76B1-449E-B030-4812E509C214.jpeg"
+    />
+
+    <!-- Disable-cache 체크하고 테스트 -->
+    <script src="./index1.js"></script>
+    <script src="./index2.js"></script>
+    <script src="./index3.js"></script>
+    <script src="./index4.js"></script>
+    <script src="./index5.js"></script>
+    <script src="./index6.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <img src="./DB380CA1-76B1-449E-B030-4812E509C214.jpeg" />
+  </body>
+</html>

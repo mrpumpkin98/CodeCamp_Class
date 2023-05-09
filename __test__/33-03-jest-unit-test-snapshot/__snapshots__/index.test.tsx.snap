@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`기존 사진이랑 바뀐게 없는지 비교해보자 - 스냅샷 테스트 1`] = `
+<div>
+  <div>
+    찰스 13세 입니다!!!
+  </div>
+  찰스의 취미 입력하기 :
+  <input />
+  <button>
+    찰스랑 놀러가기
+  </button>
+</div>
+`;
